@@ -1,0 +1,133 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+  font-size: 15px;
+  font-weight: 300;
+  color: hsl(229, 6%, 66%);
+}
+@media only screen and (min-width: 375px) and (max-width: 1440px) {
+  .wrapper {
+    width: 100%;
+    margin: 60px auto;
+  }
+  .header {
+    width: 100%;
+    text-align: center;
+  }
+  .header h2 {
+    font-weight: bold;
+    font-size: 35px;
+    color: hsl(234, 12%, 34%);
+    padding-bottom: 15px;
+  }
+  .header p {
+    width: 35%;
+    text-align: center;
+    margin: auto;
+    line-height: 30px;
+  }
+  .light {
+    font-weight: 100;
+    color: hsl(229, 6%, 66%);
+  }
+  .main {
+    margin: 30px auto;
+    width: 80%;
+    height: 60%;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .sub-content {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+  }
+  .supervisor,
+  .team,
+  .karma,
+  .calculator {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: white;
+    margin: 20px;
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 26px -15px rgba(0, 0, 0, 0.49);
+    -webkit-box-shadow: 10px 10px 26px -15px rgba(0, 0, 0, 0.49);
+    -moz-box-shadow: 10px 10px 26px -15px rgba(0, 0, 0, 0.49);
+  }
+  .team,
+  .karma {
+    width: 85%;
+  }
+  .supervisor {
+    border-top: 3px solid hsl(180, 62%, 55%);
+  }
+  .team {
+    border-top: 3px solid hsl(0, 78%, 62%);
+  }
+  .karma {
+    border-top: 3px solid hsl(34, 97%, 64%);
+  }
+  .calculator {
+    border-top: 3px solid hsl(212, 86%, 64%);
+  }
+  .title {
+    color: hsl(234, 12%, 34%);
+    padding-bottom: 10px;
+  }
+  .text {
+    width: 95%;
+    padding-bottom: 40px;
+  }
+  .icon {
+    text-align: end;
+    padding-bottom: 12px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 745px) {
+  .header {
+    width: 100%;
+    text-align: none;
+  }
+  .main {
+    width: 90%;
+  }
+  .header p {
+    width: 90%;
+  }
+  .content {
+    display: grid;
+  }
+  .supervisor,
+  .team,
+  .karma,
+  .calculator {
+    width: 90%;
+  }
+  .sub-content {
+    width: 90%;
+  }
+  .sub-content::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+  }
+  .team,
+  .karma {
+    width: 100%;
+  }
+}
